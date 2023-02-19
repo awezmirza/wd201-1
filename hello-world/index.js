@@ -1,4 +1,4 @@
 const hello = () => {
-  console.log('Hello Gi!')
+  console.log('Hello GitHub!')
 }
 hello()
