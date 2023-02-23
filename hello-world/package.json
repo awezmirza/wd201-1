@@ -1,11 +1,10 @@
-{
-  "name": "hello-world",
+{"name": "hello-world",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node streams.js",    
+    "test": "echo \"Error: no test specified\" && exit 1" 
   },
   "author": "",
-  "license": "ISC"
-}
+  "license": "ISC"}
