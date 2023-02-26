@@ -36,8 +36,7 @@ const todoList = () => {
     }
   
     const toDisplayableList = (list) => {
-        let a = list.map((item) => `${item.completed ? "[x]" : "[ ]"} ${item.title} ${item.dueDate}\n`)
-        return a.toString()        
+        return list.map((item) => `${item.completed ? "[x]" : "[ ]"} ${item.title} ${item.dueDate}`).join("\n");
     }
   
     return {
