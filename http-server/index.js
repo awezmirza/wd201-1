@@ -33,7 +33,7 @@ fs.readFile("registration.html", (err, registration) => {
 
 http.createServer((request, response) => {
   let url = request.url
-  response.writeHeader(200, { "Constent-Type": "text/html" })
+  response.writeHeader(200, { "Content-Type": "text/html" })
   switch (url) {
     case "/project":
       response.write(projectcontent)
