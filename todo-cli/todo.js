@@ -36,8 +36,14 @@ const todoList = () => {
     }
   
     const toDisplayableList = (list) => {
-        return list.map((item) => `${item.completed ? "[x]" : "[ ]"} ${item.title} ${item.dueDate}`).join("\n");
-    }
+        return list.map((item) => {
+          if (item.dueDate === today) {
+            return `${item.completed ? "[x]" : "[ ]"} ${item.title}`
+          } else {
+            return `${item.completed ? "[x]" : "[ ]"} ${item.title} ${item.dueDate}`
+          }
+        }).join("\n");
+      }
   
     return {
       all,
