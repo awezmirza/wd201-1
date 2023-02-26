@@ -25,7 +25,7 @@ const todoList = () => {
   
     const dueToday = () => {
         return all.filter((xyz) => (
-            xyz.dueDate == today
+            xyz.dueDate === today
         ))
     }
   
@@ -36,8 +36,8 @@ const todoList = () => {
     }
   
     const toDisplayableList = (list) => {
-        return list.map((item) => `${item.completed ? "[x]" : "[ ]"} ${item.title} ${item.dueDate}`
-        )  
+        let a = list.map((item) => `${item.completed ? "[x]" : "[ ]"} ${item.title} ${item.dueDate}\n`)
+        return a.toString()        
     }
   
     return {
